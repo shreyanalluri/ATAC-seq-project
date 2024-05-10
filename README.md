@@ -11,32 +11,4 @@ The filtered peaks were annotated to their nearest genomic feature using HOMER v
 
 The score matrix for each replicate was computed using deeptools v3.5.4 computeMatrix and with reference genomic coordinates for the entire genome extracted from the UCSC Table Browser (selections: Clade: Mammal, Genome: Human, assembly: hg38, group: Genes and Gene Predictions, track: NCBI RefSeq, table: UCSC Refseq, region: genome). This score matrix was used to plot signal coverage for each replicate with deeptools v3.5.4 plotProfile, with default parameters.
 
-## Questions to Address
-
-1. Are there any concerning aspects of the quality control of your sequencing reads?
-2. Are there any concerning aspects of the quality control related to alignment?
-3. Based on all quality control, will any samples be excluded from further analysis?
-4. Report the total number of alignments per sample
-5. Report the number of alignments against the mitochondrial genome
-6. How many peaks are present in each of the replicates?
-7. How many peaks are present in the set of reproducible peaks? What strategy was used to determine “reproducible” peaks?
-8. How many peaks remain after filtering out peaks overlapping blacklisted regions?
-9. Briefly discuss the main results of motif analysis and gene enrichment on peak annotations
-10. What can chromatin accessibility let us infer biologically?
-
-## Deliverables
-
-1. Produce a fragment length distribution plot for each of the samples
-2. Produce a table of how many alignments for each sample before and after filtering alignments falling on the mitochondrial chromosome
-3. Create a signal coverage plot centered on the TSS (plotProfile) for the nucleosome-free regions (NFR) and the nucleosome-bound regions (NBR)
-  - You may consider fragments (<100bp) to be those from the NFR and the rest as the NBR.
-4. A table containing the number of peaks called in each replicate, and the number of reproducible peaks
-
-5. A single BED file containing the reproducible peaks you determined from the experiment.
-
-6. Perform motif finding on your reproducible peaks
-
-  - Create a single table / figure with the most interesting results
-7. Perform a gene enrichment analysis on the annotated peaks using a well
-
 
